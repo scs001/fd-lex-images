@@ -1,6 +1,6 @@
 function SealMark({ className = '' }: { className?: string }) {
   return (
-    <svg viewBox="0 0 32 32" className={className} role="img" aria-label="识律">
+    <svg viewBox="0 0 32 32" className={className} role="img" aria-label="良律">
       <rect width="32" height="32" rx="4" fill="#A6402F" />
       <text
         x="16"
@@ -12,7 +12,7 @@ function SealMark({ className = '' }: { className?: string }) {
         fill="#FFFFFF"
         fontFamily="'Noto Serif SC', 'Songti SC', 'SimSun', serif"
       >
-        识
+        良
       </text>
       <text
         x="16"
