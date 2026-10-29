@@ -1,0 +1,540 @@
+{
+  "brand": "识律 Lex",
+  "nav": {
+    "label": "站内导航",
+    "capabilities": "能力目录",
+    "pricing": "定价",
+    "guides": "文档",
+    "docs": "私有化交付",
+    "console": "控制台"
+  },
+  "hero": {
+    "titleLine1": "法律数据 · 应用 · 模型",
+    "titleLine2": "垂直整合，全栈可私有化",
+    "lede": "识律（Lex）是寻数旗下的法律科技产品线：法规与案例数据、合同智能应用、自研法律模型与执行底座，整合为同一份版本化交付包——云端与客户机房，同一能力。",
+    "stats": {
+      "wenshu": {
+        "value": "3,700 万",
+        "label": "篇裁判文书"
+      },
+      "catalog": {
+        "value": "32,296 部",
+        "label": "法规目录"
+      },
+      "tools": {
+        "value": "52 个",
+        "label": "合同智能工具"
+      }
+    },
+    "ctaCatalog": "查看能力目录",
+    "ctaConsole": "进入控制台",
+    "diagram": {
+      "caption": "同一份交付包 · 双宿主",
+      "captionSub": "云端 / 客户机房",
+      "model": {
+        "name": "模型",
+        "items": "判官 · 起草",
+        "host": "仅私有化"
+      },
+      "app": {
+        "name": "应用",
+        "items": "LawBench 合同智能",
+        "host": "云端 · 私有化"
+      },
+      "data": {
+        "name": "数据",
+        "items": "法规 · 类案 · 指导案例 · 语料",
+        "host": "云端 · 私有化"
+      }
+    }
+  },
+  "badge": {
+    "both": "双宿主",
+    "privateOnly": "仅私有化",
+    "preview": "内测中 · 即将上线"
+  },
+  "capabilities": {
+    "title": "能力目录",
+    "lede": "识律的能力由同一构建器产出、随同一份版本化交付包交付，云端与私有化双宿主。每项能力的宿主可用性如实标注，此外不存在未标注的宿主差异。",
+    "columnCapability": "能力",
+    "columnPoints": "要点",
+    "columnHost": "宿主",
+    "items": {
+      "retrieval": {
+        "name": "法律数据检索",
+        "latin": "Legal Search MCP",
+        "desc": "面向智能体与业务系统的法律检索服务，结果附来源引用。",
+        "points": [
+          "法条语义检索",
+          "类案检索",
+          "指导案例检索",
+          "条级引用解析",
+          "五源语料（随语料包提供）"
+        ],
+        "host": "both",
+        "note": ""
+      },
+      "contract": {
+        "name": "合同智能",
+        "latin": "LawBench",
+        "desc": "法律合同工作台：合同起草与评审。",
+        "points": [
+          "合同起草生成",
+          "合同评审",
+          "52 个领域工具"
+        ],
+        "host": "both",
+        "note": ""
+      },
+      "esignature": {
+        "name": "合同电子签署",
+        "latin": "E-Signature",
+        "desc": "审查、定稿、签署与出证走同一条链：定稿版本哈希锚定后发起签署，相对方完成实名认证与签署意愿确认后落签。",
+        "points": [
+          "审查 → 定稿 → 签署 → 出证闭环",
+          "实名认证与签署意愿确认（持牌服务商通道）",
+          "定稿哈希锚定，合同全文不出客户侧",
+          "法定排除文书的适用性闸门",
+          "出证含证书链、时间戳与审计留痕，篡改可验"
+        ],
+        "status": "preview",
+        "note": "内测中：签署腿正在接入持牌电子签服务商，沙箱验证通过后开放云端与私有化签署。《电子签名法》第十四条：可靠的电子签名与手写签名或者盖章具有同等的法律效力。"
+      },
+      "models": {
+        "name": "自有法律模型",
+        "latin": "Lex Models",
+        "desc": "自研微调模型，评审与起草两条腿。",
+        "points": [
+          "判官 judge_c · 评审",
+          "起草 drafter_a · 起草",
+          "量化产物与对照评测报告随交付包"
+        ],
+        "host": "private",
+        "note": "云端 GPU 推理与模型 API：v1 未提供（规划于 v1.x）"
+      },
+      "distribution": {
+        "name": "私有化交付包",
+        "latin": "Distribution",
+        "desc": "全栈版本化交付：安装、升级、数据三档与增量更新。",
+        "points": [
+          "引用包：法规库 + 法规目录 + 指导案例（必选底座）",
+          "语料包：增五源语料与合同范本（可选）",
+          "文书包：裁判文书全量约 175 GB，按项目法务过审（定制）",
+          "增量更新：日更 / 周更 + 离线整包兜底"
+        ],
+        "host": "private",
+        "note": "仅私有化侧服务"
+      },
+      "api": {
+        "name": "API / MCP 接入",
+        "latin": "API & MCP",
+        "desc": "统一凭据接入法律检索与法律数据工具。",
+        "points": [
+          "MCP 协议端点",
+          "法律数据工具集",
+          "按行 / 按次双单位计量"
+        ],
+        "host": "both",
+        "note": ""
+      }
+    },
+    "footnote": "两宿主的能力差异仅限本目录标注项；云端与客户机房由同一构建器产出。"
+  },
+  "pricing": {
+    "title": "定价",
+    "lede": "识律按套餐计费。套餐数字由后台配置、不预填、不公开标价，于签约时确定。",
+    "subtitle": "计费维度",
+    "dimensions": {
+      "units": {
+        "name": "计量单位",
+        "value": "读取 / 检索按行，生成 / 评测按次"
+      },
+      "quota": {
+        "name": "套餐内额度",
+        "value": "按需报价"
+      },
+      "overage": {
+        "name": "超额单价",
+        "value": "按需报价"
+      },
+      "updates": {
+        "name": "增量更新订阅",
+        "value": "按需报价"
+      },
+      "deploy": {
+        "name": "私有化交付 + 年费",
+        "value": "按需报价"
+      }
+    },
+    "note": "额度耗尽服务自动暂停，控制台可见额度状态与恢复途径；定价维度于签约时确定。",
+    "cta": "联系我们获取报价",
+    "contactPending": "商务联系渠道配置中"
+  },
+  "docs": {
+    "title": "私有化交付",
+    "lede": "识律全栈可私有化：同一构建器产出的版本化交付包，在客户机房独立运行。",
+    "sections": {
+      "deploy": {
+        "name": "部署形态",
+        "desc": "单机容器编排一键安装；交付包版本化，组件镜像以 digest 锁定；安装后经随包冒烟验收。"
+      },
+      "airgap": {
+        "name": "离线环境",
+        "desc": "在仅有安装介质、无外网连接的环境安装后，法条检索、类案检索与合同生成核心能力可用。"
+      },
+      "upgrade": {
+        "name": "升级",
+        "desc": "换版本重装式升级；语料、生成物与配置等客户数据卷在重装后完整保留。"
+      },
+      "updates": {
+        "name": "增量更新",
+        "desc": "客户侧定时任务经分发端点（凭据鉴权）拉取日更 / 周更增量包；增量包经完整性校验，校验不过不应用。"
+      },
+      "offline": {
+        "name": "离线通道",
+        "desc": "无法联网的客户经离线整包通道，获得与在线拉取等价的增量内容。"
+      },
+      "tiers": {
+        "name": "数据三档",
+        "desc": "引用包（法规库 + 法规目录 + 指导案例）为必选底座；语料包与文书包为可选档；文书包（裁判文书全文）默认不含，按项目完成法务审核后定制提供。"
+      }
+    },
+    "note": "部署硬件要求与详细交付文档随交付包发布（此处为占位，不作未定承诺）。"
+  },
+  "docHub": {
+    "eyebrow": "文档",
+    "indexTitle": "识律文档",
+    "indexLede": "接入指南与使用手册；文档按当前语言提供，中文与英文版本对等维护。",
+    "read": "阅读全文 →",
+    "backToIndex": "返回文档索引",
+    "empty": "暂无文档。",
+    "notFound": {
+      "title": "未找到这篇文档",
+      "lede": "你访问的文档不存在或尚未发布，可以从文档索引中选择其他文档。"
+    }
+  },
+  "footer": {
+    "tagline": "法律数据 · 应用 · 模型，垂直整合、全栈可私有化。",
+    "linesLabel": "寻数产品线",
+    "lines": {
+      "base": "寻数·壹座 Base",
+      "lex": "寻数·识律 Lex",
+      "wire": "寻数·柏讯 Wire",
+      "facet": "寻数·谦面 Facet",
+      "constellation": "寻数·萬星 Constellation"
+    },
+    "lexCurrent": "当前站点",
+    "brandSentence": "壹座之上，萬星闪耀",
+    "entriesLabel": "入口",
+    "entries": {
+      "home": "官网",
+      "console": "控制台",
+      "mcp": "MCP 端点",
+      "deploy": "私有化交付"
+    },
+    "contactLabel": "联系",
+    "contactPending": "商务联系渠道配置中",
+    "icp": "ICP 备案信息待补充",
+    "copyright": "© 2026 寻数（FindData）· 识律 Lex"
+  },
+  "lang": {
+    "switch": "English",
+    "ariaLabel": "切换到英文"
+  },
+  "console": {
+    "title": "识律控制台",
+    "nav": {
+      "overview": "总览",
+      "credentials": "API 凭据",
+      "usage": "用量",
+      "billing": "账单",
+      "quota": "额度状态"
+    },
+    "logout": "退出登录",
+    "adminLink": "进入运营后台",
+    "credentialProxyNote": "凭据经 lex 服务端代理至 registry 铸造/吊销：明文仅在铸造响应中出现一次，平台不落库、不可找回。",
+    "common": {
+      "loading": "加载中…",
+      "empty": "暂无数据",
+      "unit": "单位",
+      "quantity": "数量",
+      "periodLabel": "周期"
+    },
+    "error": {
+      "title": "请求失败",
+      "authTitle": "登录态无效或权限不足",
+      "authHint": "请重新登录；若为组织权限问题，请联系平台开通 lex-customers 组织成员资格。",
+      "retry": "重试"
+    },
+    "gate": {
+      "errorTitle": "控制台不可用",
+      "blockedTitle": "控制台登录未配置",
+      "blockedBody": "服务端尚未配置 Logto 登录（环境变量缺失），控制台如实停用而不是假登录。缺失项：",
+      "blockedConfigHint": "需要主代理在 Logto 侧新建 SPA 应用并回填 LOGTO_ISSUER / LOGTO_CLIENT_ID（详见部署 runbook）。",
+      "loginTitle": "登录识律控制台",
+      "loginBody": "使用企业账号登录或注册；外部客户归属 lex-customers 组织，与内部身份隔离。",
+      "loginButton": "登录 / 注册",
+      "loginUnavailable": "登录服务暂不可用，请稍后重试。",
+      "loginHint": "登录在 Logto 托管页完成；注册入口亦在该页。凭据与用量随该身份在控制台自助管理。"
+    },
+    "overview": {
+      "title": "总览",
+      "subtitle": "客户档案、本期用量与额度状态一览。",
+      "customerLabel": "客户",
+      "noCustomer": "未开户",
+      "planLabel": "套餐",
+      "callsLabel": "本期调用",
+      "quotaLabel": "额度状态",
+      "usageByUnit": "本期按单位用量",
+      "noUsage": "本期暂无用量记录。",
+      "moreUsage": "查看看用量明细",
+      "quickLinks": "快捷入口",
+      "linkCredentials": "管理 API 凭据",
+      "linkBilling": "查看账单",
+      "linkQuota": "额度状态与恢复途径",
+      "unboundHint": "当前登录身份尚未绑定到计费客户：用量仍按你的身份统计；账单与额度需运营在后台完成身份绑定后可见。"
+    },
+    "credentials": {
+      "title": "API 凭据",
+      "subtitle": "铸造/吊销用于 MCP 调用的长命凭据（不自动过期；吊销即时生效）。",
+      "mintTitle": "铸造新凭据",
+      "nameLabel": "凭据名称",
+      "namePlaceholder": "例：生产环境",
+      "mint": "铸造",
+      "minting": "铸造中…",
+      "mintHint": "明文仅在铸造成功后显示一次，请立即保存。",
+      "plaintextTitle": "新凭据明文（仅此一次）",
+      "copy": "复制",
+      "copied": "已复制",
+      "plaintextHint": "关闭或刷新后无法再次查看；平台只存哈希。请存入密钥管理系统。",
+      "revokeConfirm": "确认吊销凭据「{{name}}」？吊销不可逆，下一次调用即被拒绝。",
+      "revokedNotice": "凭据「{{name}}」已吊销。",
+      "colName": "名称",
+      "colKey": "前缀",
+      "colGroups": "授权组",
+      "colStatus": "状态",
+      "colLastUsed": "最近使用",
+      "colActions": "操作",
+      "revoke": "吊销",
+      "empty": "尚未铸造任何凭据。",
+      "eventsTitle": "操作留痕",
+      "eventsHint": "仅记录经本控制台发生的铸造/吊销（元数据；不含明文与哈希）。",
+      "eventsEmpty": "暂无操作记录。"
+    },
+    "usagePage": {
+      "title": "用量",
+      "subtitle": "本客户（含绑定身份）在所选周期的调用与双单位数量；口径与计量记录一致。",
+      "totalCalls": "调用次数",
+      "quantityOf": "{{unit}} 数量",
+      "breakdownTitle": "按工具明细",
+      "empty": "该周期暂无用量记录。",
+      "colServer": "服务",
+      "colTool": "工具",
+      "colCalls": "调用",
+      "recentTitle": "最近调用",
+      "identitiesNote": "统计身份：{{identities}}（调用者 = registry 审计身份）。"
+    },
+    "billing": {
+      "title": "账单",
+      "subtitle": "lex 账本为权威口径；支付侧余额仅作执行通道。",
+      "kind": {
+        "grant": "套餐额度",
+        "overage": "超额",
+        "hardstop": "硬停",
+        "adjustment": "人工调整"
+      },
+      "unboundTitle": "尚未绑定计费客户",
+      "unboundHint": "当前登录身份未绑定到任何计费客户，账单暂不可见。请联系运营在后台完成身份绑定。",
+      "customerLabel": "客户",
+      "totalLabel": "本期合计",
+      "totalHint": "按已返回账本条目的微元合计",
+      "byKindLabel": "按类型",
+      "noEntries": "该周期暂无账本条目。",
+      "entriesTitle": "账本流水",
+      "colKind": "类型",
+      "colAmount": "金额",
+      "colEntry": "幂等键",
+      "ledgerNote": "结算按周期执行；超额按套餐配置单价计费，调价即时生效。"
+    },
+    "quota": {
+      "title": "额度状态",
+      "subtitle": "逐单位水位与硬停判定（fail-closed）；用量取计量流实时口径。",
+      "unboundTitle": "尚未绑定计费客户",
+      "unboundHint": "绑定后此处显示逐单位额度水位与恢复途径。",
+      "allowed": "额度正常",
+      "blocked": "已触发硬停",
+      "balanceLabel": "支付侧余额",
+      "balanceUnreachable": "不可达（fail-closed：预检不通过）",
+      "notConfigured": "套餐未配置该单位",
+      "used": "已用",
+      "included": "含额",
+      "remaining": "剩余",
+      "tiers": "已跨预警档：{{tiers}}",
+      "overagePriced": "超额按单价继续",
+      "recoveryTitle": "恢复途径",
+      "recoveryNone": "当前无需恢复动作。",
+      "recovery": {
+        "upgrade": "额度耗尽：联系商务升级套餐或增购额度；下月 1 日含额自动重置。",
+        "topUp": "余额不足：为支付账户充值后自动恢复。",
+        "unreachable": "计费面暂不可达：平台按 fail-closed 拒绝调用，恢复后自动放行；如持续请上报。",
+        "contact": "需要协助？联系商务或平台运维。",
+        "notProvisioned": "尚未开户：请联系商务开通后使用。"
+      },
+      "identitiesNote": "统计身份：{{identities}}"
+    }
+  },
+  "admin": {
+    "nav": {
+      "customers": "客户",
+      "plans": "套餐配置",
+      "ledger": "账本",
+      "usage": "用量",
+      "credentials": "凭据留痕"
+    },
+    "exit": "返回控制台",
+    "common": {
+      "loading": "加载中…",
+      "empty": "暂无数据"
+    },
+    "error": {
+      "title": "请求失败",
+      "authTitle": "鉴权失败",
+      "retry": "重试"
+    },
+    "auth": {
+      "viaRole": "Logto 管理员角色",
+      "viaToken": "内部令牌（X-Admin-Token）"
+    },
+    "gate": {
+      "title": "运营后台登录",
+      "noCredentials": "未检测到可用凭据：请使用带管理员角色的 Logto 登录态，或输入内部令牌。",
+      "tokenLabel": "内部令牌（INTERNAL_API_TOKEN）",
+      "tokenSubmit": "使用令牌进入",
+      "roleHint": "当前控制台登录身份不是管理员；也可在 Logto 为其分配 ADMIN_ROLES 中的角色。",
+      "backToConsole": "返回控制台",
+      "hint": "令牌仅保存在本机 localStorage，仅内部运营使用；服务端未配置令牌时一律拒绝（fail-closed）。"
+    },
+    "customers": {
+      "title": "客户管理",
+      "subtitle": "开户（sub2api 代建支付账户）/ 改档位与状态 / 绑定 Logto 身份。",
+      "sub2apiNote": "开户会调用 sub2api 建户（幂等）；失败如实报错，不落本地脏行。",
+      "createTitle": "新建客户",
+      "nameLabel": "客户名称",
+      "planLabel": "套餐档位",
+      "create": "开户",
+      "creating": "开户中…",
+      "noPlans": "请先在「套餐配置」创建档位",
+      "colName": "客户",
+      "colIdentity": "支付账户",
+      "colPlan": "套餐",
+      "colStatus": "状态",
+      "colActions": "操作",
+      "detail": "身份与额度",
+      "detailTitle": "客户详情：{{name}}",
+      "quotaLabel": "本期额度",
+      "quotaAllowed": "正常",
+      "identitiesTitle": "身份绑定",
+      "identitiesHint": "把客户的 Logto 身份（username/email）绑定到本客户；控制台据此解析用量与账单。",
+      "unbind": "解绑",
+      "noIdentities": "尚未绑定身份。",
+      "identityPlaceholder": "Logto username 或 email",
+      "bind": "绑定",
+      "meteringIdentities": "计量身份：{{identities}}",
+      "empty": "尚无客户。",
+      "createdNotice": "客户已创建。",
+      "existingNotice": "客户已存在（幂等返回）。"
+    },
+    "plans": {
+      "title": "套餐配置",
+      "subtitle": "档位、包含额度与超额单价；保存即生效，调价不发版。",
+      "noDeployNote": "保存即生效（结算即买即读现价）",
+      "editorTitle": "档位编辑器",
+      "newDraft": "清空表单",
+      "codeLabel": "档位编码",
+      "nameLabel": "档位名称",
+      "monthlyLabel": "月费（元）",
+      "activeLabel": "启用",
+      "quotasTitle": "按单位配额",
+      "includedLabel": "包含额度",
+      "overageLabel": "超额单价（元/单位）",
+      "removeQuota": "移除",
+      "addQuota": "新增单位",
+      "save": "保存并生效",
+      "saving": "保存中…",
+      "savedNotice": "已保存，新价对后续计量即时生效。",
+      "colCode": "编码",
+      "colName": "名称",
+      "colMonthly": "月费",
+      "colQuotas": "配额（含额 / 超额单价）",
+      "colActions": "操作",
+      "inactive": "停用",
+      "edit": "编辑",
+      "empty": "尚无套餐档位（数字不预填，按需配置）。"
+    },
+    "ledger": {
+      "title": "账本",
+      "subtitle": "billing_ledger_entries 只读流水；金额以微元入账、展示为元。",
+      "customerLabel": "客户",
+      "allCustomers": "全部客户",
+      "empty": "该条件下暂无账本条目。",
+      "colCustomer": "客户",
+      "colSettled": "支付侧执行",
+      "applied": "已执行",
+      "notApplied": "未执行",
+      "footnote": "幂等键唯一；同键重放不双记（结算幂等的兜底约束）。"
+    },
+    "usage": {
+      "title": "用量视图",
+      "subtitle": "metering_records 按（轨道×调用者×单位）聚合；平台轨不计费。",
+      "trackLabel": "轨道",
+      "allTracks": "全部轨道",
+      "totalCalls": "调用次数",
+      "byTrack": "按轨道",
+      "byUnit": "按单位",
+      "colTrack": "轨道",
+      "colCaller": "调用者",
+      "empty": "该周期暂无计量记录。",
+      "footnote": "用量戳为计费唯一依据；缺用量戳的审计事件落计量异常表（不静默）。"
+    },
+    "credentials": {
+      "title": "凭据留痕",
+      "subtitle": "经 lex 控制台代理发生的铸造/吊销事件（元数据；明文与哈希均不落库）。",
+      "usernameLabel": "按身份过滤",
+      "empty": "暂无凭据操作记录。",
+      "colTime": "时间",
+      "colAction": "动作",
+      "colUser": "身份",
+      "colKey": "凭据",
+      "colGroups": "授权组",
+      "colDetail": "结果"
+    }
+  },
+  "deploy": {
+    "eyebrow": "私有化交付",
+    "title": "识律私有化交付",
+    "lede": "同一构建器产出的版本化交付包在客户机房独立运行：单机容器编排一键安装、组件镜像 digest 锁定、数据三档按需交付；云端与客户机房能力一致，差异仅限能力目录标注项。",
+    "ctaSections": "查看交付构成",
+    "channelsTitle": "交付通道",
+    "channels": {
+      "single": {
+        "name": "整包安装",
+        "desc": "随包介质一次性安装：引用包为必选底座，语料包与文书包按项目范围选装。"
+      },
+      "incremental": {
+        "name": "增量通道",
+        "desc": "客户侧定时任务经分发端点（凭据鉴权）拉取日更/周更增量；完整性校验不过不应用。"
+      },
+      "airgap": {
+        "name": "离线通道",
+        "desc": "仅安装介质、无外网的环境经离线整包获得与在线拉取等价的增量内容。"
+      }
+    },
+    "scopeTitle": "范围与验收",
+    "scope": {
+      "cloud": "云端：lex.finddatatech.cloud 提供检索、合同智能与模型 API 接入（模型 API 规划于 v1.x）。",
+      "private": "私有化：单机 compose 一键安装；隔离环境（无外网）法条/类案检索与合同生成可用。",
+      "contract": "验收：随包冒烟清单 + 版本化回滚；升级为换版本重装式，客户数据卷完整保留。"
+    },
+    "contactCta": "联系我们获取交付方案"
+  }
+}

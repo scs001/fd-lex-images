@@ -1,0 +1,87 @@
+# fd-lex 快照出片（web + api）— 公开仓 T1 免费通道。
+# 源 = FindDataTechnology/fd-lex main；快照 commit message 记真实源 sha。
+# 通道判据：docs/IMAGE-RELEASE.md（hkccr 推 → cheap-3 tcr-relay 每 5 分钟回灌 ccr，
+# repos.conf 已登记 finddata-business/fd-lex-web 与 fd-lex-api，2026-10-30 实查）。
+# tag = sha-<快照 commit 短哈希>（出片纪律：tag 对快照 sha，溯源看本仓 commit message）。
+name: image
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: image-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  REGISTRY: hkccr.ccs.tencentyun.com
+  NAMESPACE: finddata-business
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ secrets.TCR_USERNAME }}
+          password: ${{ secrets.TCR_PASSWORD }}
+
+      - id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.NAMESPACE }}/fd-lex-web
+          tags: |
+            type=sha,prefix=sha-
+            type=raw,value=main
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: web
+          file: web/Dockerfile
+          platforms: linux/amd64
+          push: true
+          provenance: false
+          tags: ${{ steps.meta.outputs.tags }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  api:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ secrets.TCR_USERNAME }}
+          password: ${{ secrets.TCR_PASSWORD }}
+
+      - id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.NAMESPACE }}/fd-lex-api
+          tags: |
+            type=sha,prefix=sha-
+            type=raw,value=main
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: server
+          file: server/Dockerfile
+          platforms: linux/amd64
+          push: true
+          provenance: false
+          tags: ${{ steps.meta.outputs.tags }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

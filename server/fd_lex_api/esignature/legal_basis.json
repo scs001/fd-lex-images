@@ -1,0 +1,61 @@
+{
+  "_doc": "电子签适用性闸门的法条依据（change lex-contract-esignature task 4.1）。本文件全部文本来自 fd-legal-search-mcp 的工具返回，逐字摘录、未改写；禁止人工补写条文。重新核验时整体替换本文件。",
+  "retrieved_at": "2026-10-29T14:05:18+08:00",
+  "tool": {
+    "endpoint": "http://cheap6.mesh.finddata.cn:31884/mcp",
+    "server": "fd-legal-search-mcp",
+    "calls": [
+      "law_search(title_query=电子签名法)",
+      "law_reference(citation=《中华人民共和国电子签名法》第三条)",
+      "law_reference(citation=《中华人民共和国电子签名法》第十三条)",
+      "law_reference(citation=《中华人民共和国电子签名法》第十四条)"
+    ]
+  },
+  "statute": {
+    "id": 18881,
+    "title": "中华人民共和国电子签名法",
+    "type": "法律",
+    "status": "有效",
+    "publish": "2019-04-23",
+    "provenance": {
+      "source": "law_db.laws",
+      "stable_id": "18881",
+      "as_of": "2026-09-08"
+    }
+  },
+  "article_3": {
+    "no": 3,
+    "display": "第三条",
+    "text": "第三条　民事活动中的合同或者其他文件、单证等文书，当事人可以约定使用或者不使用电子签名、数据电文。\n当事人约定使用电子签名、数据电文的文书，不得仅因为其采用电子签名、数据电文的形式而否定其法律效力。\n前款规定不适用下列文书：\n（一）涉及婚姻、收养、继承等人身关系的；\n（二）涉及停止供水、供热、供气等公用事业服务的；\n（三）法律、行政法规规定的不适用电子文书的其他情形。\n\n第二章　数据电文",
+    "chunk_provenance": {
+      "source": "law_db.law_chunks_v2",
+      "stable_id": "18881:1",
+      "as_of": "2026-09-09"
+    }
+  },
+  "article_13": {
+    "no": 13,
+    "display": "第十三条",
+    "text": "第十三条　电子签名同时符合下列条件的，视为可靠的电子签名：\n（一）电子签名制作数据用于电子签名时，属于电子签名人专有；\n（二）签署时电子签名制作数据仅由电子签名人控制；\n（三）签署后对电子签名的任何改动能够被发现；\n（四）签署后对数据电文内容和形式的任何改动能够被发现。\n当事人也可以选择使用符合其约定的可靠条件的电子签名。",
+    "chunk_provenance": {
+      "source": "law_db.law_chunks_v2",
+      "stable_id": "18881:4",
+      "as_of": "2026-09-09"
+    }
+  },
+  "article_14": {
+    "no": 14,
+    "display": "第十四条",
+    "text": "第十四条　可靠的电子签名与手写签名或者盖章具有同等的法律效力。",
+    "chunk_provenance": {
+      "source": "law_db.law_chunks_v2",
+      "stable_id": "18881:4",
+      "as_of": "2026-09-09"
+    }
+  },
+  "labor_guideline": {
+    "retrieved": false,
+    "title": "电子劳动合同订立指引（人力资源社会保障部办公厅）",
+    "note": "法规库未收录该部门规范性文件，条文原文未获核验；闸门 MUST NOT 引用其条文。"
+  }
+}

@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+web/dist/
+*.local
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Build caches
+.vite/
+tsconfig.tsbuildinfo
+
+# Delivery pack artifacts (packer output; evidence dir, never committed)
+packer/dist/
+
+# Local dev databases (server 本地运行产生，不入库)
+server/*.db
+server/*.db-journal

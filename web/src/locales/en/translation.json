@@ -1,0 +1,540 @@
+{
+  "brand": "识律 Lex",
+  "nav": {
+    "label": "Site navigation",
+    "capabilities": "Capabilities",
+    "pricing": "Pricing",
+    "guides": "Docs",
+    "docs": "Private Deployment",
+    "console": "Console"
+  },
+  "hero": {
+    "titleLine1": "Legal data · apps · models",
+    "titleLine2": "Vertically integrated, privately deployable end to end",
+    "lede": "Lex is the legal-technology product line of FindData: statute and case data, contract-intelligence apps, in-house legal models and the execution base, delivered as one versioned distribution package — one capability set across two hosts, our cloud or your machine room.",
+    "stats": {
+      "wenshu": {
+        "value": "37M",
+        "label": "court judgments"
+      },
+      "catalog": {
+        "value": "32,296",
+        "label": "statute catalog entries"
+      },
+      "tools": {
+        "value": "52",
+        "label": "contract-intelligence tools"
+      }
+    },
+    "ctaCatalog": "Browse the capability catalog",
+    "ctaConsole": "Open the console",
+    "diagram": {
+      "caption": "One distribution package · two hosts",
+      "captionSub": "Cloud / on-premises",
+      "model": {
+        "name": "Models",
+        "items": "Judge · Drafter",
+        "host": "On-prem only"
+      },
+      "app": {
+        "name": "Apps",
+        "items": "LawBench contract intelligence",
+        "host": "Cloud · On-prem"
+      },
+      "data": {
+        "name": "Data",
+        "items": "Statutes · cases · guiding cases · corpora",
+        "host": "Cloud · On-prem"
+      }
+    }
+  },
+  "badge": {
+    "both": "Dual-host",
+    "privateOnly": "On-prem only",
+    "preview": "In preview · coming soon"
+  },
+  "capabilities": {
+    "title": "Capability catalog",
+    "lede": "Lex capabilities are produced by a single builder and delivered in one versioned distribution package, hosted in our cloud or in your machine room. Every entry's availability per host is stated honestly; no unstated host differences exist beyond this catalog.",
+    "columnCapability": "Capability",
+    "columnPoints": "Highlights",
+    "columnHost": "Hosting",
+    "items": {
+      "retrieval": {
+        "name": "Legal data search",
+        "latin": "Legal Search MCP",
+        "desc": "Legal search service for agents and business systems, with source citations attached to results.",
+        "points": [
+          "Statute semantic search",
+          "Similar-case search",
+          "Guiding-case search",
+          "Article-level citation parsing",
+          "Five-source corpus (provided with the corpus pack)"
+        ],
+        "host": "both",
+        "note": ""
+      },
+      "contract": {
+        "name": "Contract intelligence",
+        "latin": "LawBench",
+        "desc": "The legal contract workbench: drafting and review.",
+        "points": [
+          "Contract drafting and generation",
+          "Contract review",
+          "52 domain tools"
+        ],
+        "host": "both",
+        "note": ""
+      },
+      "esignature": {
+        "name": "Contract e-signature",
+        "latin": "E-Signature",
+        "desc": "One chain from review to evidence: anchor the finalized version by hash, send signing links, and seal only after identity and signing-intent verification.",
+        "points": [
+          "Review, final draft, signing and evidence in one flow",
+          "Identity and signing-intent verification via a licensed provider",
+          "Hash-anchored final version; contract text never leaves your side",
+          "Applicability gate for documents excluded by law",
+          "Certificate chain, trusted timestamp and audit trail — tamper-evident"
+        ],
+        "status": "preview",
+        "note": "In preview: the signing leg is being integrated with a licensed e-signature provider; cloud and on-prem signing open after sandbox validation. Article 14 of the PRC E-Signature Law: a reliable electronic signature has the same legal effect as a handwritten signature or seal."
+      },
+      "models": {
+        "name": "In-house legal models",
+        "latin": "Lex Models",
+        "desc": "In-house fine-tuned models on two legs: review and drafting.",
+        "points": [
+          "Judge (judge_c) · review",
+          "Drafter (drafter_a) · drafting",
+          "Quantized artifacts and paired evaluation reports ship with the package"
+        ],
+        "host": "private",
+        "note": "Cloud GPU inference and model API: not provided in v1 (planned for v1.x)"
+      },
+      "distribution": {
+        "name": "Private distribution package",
+        "latin": "Distribution",
+        "desc": "Versioned full-stack delivery: installation, upgrades, three data tiers and incremental updates.",
+        "points": [
+          "Citation pack: statute library + statute catalog + guiding cases (required base)",
+          "Corpus pack: adds the five-source corpus and contract templates (optional)",
+          "Judgment pack: full judgments, approx. 175 GB, customized after per-project legal review",
+          "Incremental updates: daily / weekly pulls + offline full-package fallback"
+        ],
+        "host": "private",
+        "note": "On-premises side only"
+      },
+      "api": {
+        "name": "API / MCP access",
+        "latin": "API & MCP",
+        "desc": "One credential for legal search and legal data tools.",
+        "points": [
+          "MCP protocol endpoint",
+          "Legal data tool set",
+          "Dual-unit metering: per row / per call"
+        ],
+        "host": "both",
+        "note": ""
+      }
+    },
+    "footnote": "Capability differences between the two hosts are limited to what this catalog annotates; cloud and on-premises are produced by the same builder."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "lede": "Lex is billed by plan. Plan numbers are configured in the admin backend, never pre-filled or publicly listed; they are fixed when the contract is signed.",
+    "subtitle": "Billing dimensions",
+    "dimensions": {
+      "units": {
+        "name": "Metering units",
+        "value": "Reads / searches per row; generations / evaluations per call"
+      },
+      "quota": {
+        "name": "Included quota",
+        "value": "Quote on request"
+      },
+      "overage": {
+        "name": "Overage unit price",
+        "value": "Quote on request"
+      },
+      "updates": {
+        "name": "Incremental update subscription",
+        "value": "Quote on request"
+      },
+      "deploy": {
+        "name": "Private deployment + annual fee",
+        "value": "Quote on request"
+      }
+    },
+    "note": "When quota runs out the service pauses automatically; quota status and recovery paths are visible in the console. Pricing dimensions are fixed at signing.",
+    "cta": "Contact us for a quote",
+    "contactPending": "Business contact channel being set up"
+  },
+  "docs": {
+    "title": "Private deployment",
+    "lede": "The full Lex stack is privately deployable: one versioned distribution package, produced by a single builder, running independently in your machine room.",
+    "sections": {
+      "deploy": {
+        "name": "Deployment",
+        "desc": "One-click install via single-machine container orchestration; the bundle is versioned and component images are digest-locked; installation is verified by the bundled smoke checks."
+      },
+      "airgap": {
+        "name": "Air-gapped environments",
+        "desc": "After installing from the media alone, with no internet connection, the core capabilities — statute search, similar-case search and contract drafting — remain available."
+      },
+      "upgrade": {
+        "name": "Upgrades",
+        "desc": "Upgrades are reinstall-based; customer data volumes — corpora, generated artifacts and configuration — are fully preserved."
+      },
+      "updates": {
+        "name": "Incremental updates",
+        "desc": "A customer-side scheduled task pulls daily / weekly increment packages from the distribution endpoint (credential-authenticated); each package passes an integrity check, and a failed check means it is never applied."
+      },
+      "offline": {
+        "name": "Offline channel",
+        "desc": "Customers who cannot reach the endpoint receive equivalent incremental content through the offline full-package channel."
+      },
+      "tiers": {
+        "name": "Three data tiers",
+        "desc": "The citation pack (statute library + statute catalog + guiding cases) is the required base; the corpus and judgment packs are optional; the judgment pack (full judgment texts) is excluded by default and customized only after per-project legal review."
+      }
+    },
+    "note": "Hardware requirements and the full delivery documentation ship with the distribution package (placeholder here; no commitments beyond the settled scope)."
+  },
+  "docHub": {
+    "eyebrow": "Docs",
+    "indexTitle": "Lex documentation",
+    "indexLede": "Integration guides and manuals, served in the current language; the Chinese and English versions are maintained in parity.",
+    "read": "Read more →",
+    "backToIndex": "Back to docs index",
+    "empty": "No documents yet.",
+    "notFound": {
+      "title": "Document not found",
+      "lede": "This document does not exist or has not been published yet; pick another one from the docs index."
+    }
+  },
+  "footer": {
+    "tagline": "Legal data · apps · models — vertically integrated, privately deployable end to end.",
+    "linesLabel": "FindData product lines",
+    "lines": {
+      "base": "寻数·壹座 Base",
+      "lex": "寻数·识律 Lex",
+      "wire": "寻数·柏讯 Wire",
+      "facet": "寻数·谦面 Facet",
+      "constellation": "寻数·萬星 Constellation"
+    },
+    "lexCurrent": "This site",
+    "brandSentence": "One · Ten · Hundred · Thousand · Myriad — every star takes its seat",
+    "entriesLabel": "Entries",
+    "entries": {
+      "home": "Official site",
+      "console": "Console",
+      "mcp": "MCP endpoint",
+      "deploy": "Private deployment"
+    },
+    "contactLabel": "Contact",
+    "contactPending": "Business contact channel being set up",
+    "icp": "ICP filing information to be added",
+    "copyright": "© 2026 FindData · Lex"
+  },
+  "lang": {
+    "switch": "中文",
+    "ariaLabel": "Switch to Chinese"
+  },
+  "console": {
+    "title": "Lex Console",
+    "nav": {
+      "overview": "Overview",
+      "credentials": "API keys",
+      "usage": "Usage",
+      "billing": "Billing",
+      "quota": "Quota"
+    },
+    "logout": "Sign out",
+    "adminLink": "Open operations admin",
+    "credentialProxyNote": "Keys are minted/revoked through the lex API proxy to the registry. The plaintext appears once in the mint response; the platform never stores it and cannot recover it.",
+    "common": {
+      "loading": "Loading…",
+      "empty": "No data",
+      "unit": "Unit",
+      "quantity": "Quantity",
+      "periodLabel": "Period"
+    },
+    "error": {
+      "title": "Request failed",
+      "authTitle": "Session invalid or permission denied",
+      "authHint": "Sign in again; if this is an organization issue, ask the platform team to grant lex-customers membership.",
+      "retry": "Retry"
+    },
+    "gate": {
+      "errorTitle": "Console unavailable",
+      "blockedTitle": "Console sign-in not configured",
+      "blockedBody": "Logto sign-in is not configured on the server (missing environment variables); the console stays disabled rather than faking a login. Missing:",
+      "blockedConfigHint": "A Logto SPA application must be created and LOGTO_ISSUER / LOGTO_CLIENT_ID filled in (see the deployment runbook).",
+      "loginTitle": "Sign in to the Lex console",
+      "loginBody": "Sign in or register with your enterprise account. External customers belong to the lex-customers organization, isolated from internal identities.",
+      "loginButton": "Sign in / Register",
+      "loginUnavailable": "Sign-in service is unavailable right now; please retry later.",
+      "loginHint": "Sign-in and registration happen on the Logto-hosted page. Keys and usage are then self-served under that identity."
+    },
+    "overview": {
+      "title": "Overview",
+      "subtitle": "Customer profile, current-period usage and quota state at a glance.",
+      "customerLabel": "Customer",
+      "noCustomer": "Not provisioned",
+      "planLabel": "Plan",
+      "callsLabel": "Calls this period",
+      "quotaLabel": "Quota state",
+      "usageByUnit": "Usage by unit this period",
+      "noUsage": "No usage recorded this period.",
+      "moreUsage": "View usage detail",
+      "quickLinks": "Quick links",
+      "linkCredentials": "Manage API keys",
+      "linkBilling": "View billing",
+      "linkQuota": "Quota state and recovery",
+      "unboundHint": "This identity is not yet bound to a billing customer. Usage is still counted under your identity; billing and quota appear once operations bind it in the admin console."
+    },
+    "credentials": {
+      "title": "API keys",
+      "subtitle": "Mint and revoke long-lived keys for MCP access (no auto-expiry; revocation is immediate).",
+      "mintTitle": "Mint a new key",
+      "nameLabel": "Key name",
+      "namePlaceholder": "e.g. production",
+      "mint": "Mint",
+      "minting": "Minting…",
+      "mintHint": "The plaintext is shown once right after minting; save it immediately.",
+      "plaintextTitle": "New key plaintext (shown once)",
+      "copy": "Copy",
+      "copied": "Copied",
+      "plaintextHint": "It cannot be viewed again after closing or refreshing; only the hash is stored. Keep it in your secret manager.",
+      "revokeConfirm": "Revoke key \"{{name}}\"? Revocation is irreversible and the next call is rejected.",
+      "revokedNotice": "Key \"{{name}}\" revoked.",
+      "colName": "Name",
+      "colKey": "Prefix",
+      "colGroups": "Groups",
+      "colStatus": "Status",
+      "colLastUsed": "Last used",
+      "colActions": "Actions",
+      "revoke": "Revoke",
+      "empty": "No keys yet.",
+      "eventsTitle": "Audit trail",
+      "eventsHint": "Only mint/revoke events performed through this console (metadata; no plaintext, no hash).",
+      "eventsEmpty": "No operations recorded yet."
+    },
+    "usagePage": {
+      "title": "Usage",
+      "subtitle": "Calls and dual-unit quantities for this customer (including bound identities) in the selected period; same basis as metering records.",
+      "totalCalls": "Calls",
+      "quantityOf": "{{unit}} quantity",
+      "breakdownTitle": "Breakdown by tool",
+      "empty": "No usage recorded in this period.",
+      "colServer": "Server",
+      "colTool": "Tool",
+      "colCalls": "Calls",
+      "recentTitle": "Recent calls",
+      "identitiesNote": "Identities counted: {{identities}} (caller = registry audit identity)."
+    },
+    "billing": {
+      "title": "Billing",
+      "subtitle": "The lex ledger is authoritative; the payment-side balance is only the execution channel.",
+      "kind": {
+        "grant": "Plan grant",
+        "overage": "Overage",
+        "hardstop": "Hard stop",
+        "adjustment": "Adjustment"
+      },
+      "unboundTitle": "No billing customer bound",
+      "unboundHint": "This identity is not bound to a billing customer, so billing is not visible yet. Ask operations to bind it in the admin console.",
+      "customerLabel": "Customer",
+      "totalLabel": "Period total",
+      "totalHint": "Sum of micro-amounts over returned ledger entries",
+      "byKindLabel": "By kind",
+      "noEntries": "No ledger entries in this period.",
+      "entriesTitle": "Ledger entries",
+      "colKind": "Kind",
+      "colAmount": "Amount",
+      "colEntry": "Idempotency key",
+      "ledgerNote": "Settlement runs per period; overage uses the plan unit price and price changes take effect immediately."
+    },
+    "quota": {
+      "title": "Quota state",
+      "subtitle": "Per-unit water level and hard-stop verdict (fail-closed); usage comes from the live metering stream.",
+      "unboundTitle": "No billing customer bound",
+      "unboundHint": "Once bound, per-unit quota levels and recovery paths appear here.",
+      "allowed": "Within quota",
+      "blocked": "Hard-stopped",
+      "balanceLabel": "Payment balance",
+      "balanceUnreachable": "Unreachable (fail-closed: pre-check denies)",
+      "notConfigured": "Unit not configured in plan",
+      "used": "Used",
+      "included": "Included",
+      "remaining": "Remaining",
+      "tiers": "Warning tiers crossed: {{tiers}}",
+      "overagePriced": "Overage billed per unit",
+      "recoveryTitle": "Recovery paths",
+      "recoveryNone": "No recovery action needed.",
+      "recovery": {
+        "upgrade": "Quota exhausted: contact sales to upgrade the plan or add quota; included quota resets on the 1st of next month.",
+        "topUp": "Insufficient balance: top up the payment account and access resumes automatically.",
+        "unreachable": "Billing plane unreachable: calls are denied fail-closed and resume automatically once it recovers; escalate if it persists.",
+        "contact": "Need help? Contact sales or platform operations.",
+        "notProvisioned": "Not provisioned yet: contact sales to get started."
+      },
+      "identitiesNote": "Identities counted: {{identities}}"
+    }
+  },
+  "admin": {
+    "nav": {
+      "customers": "Customers",
+      "plans": "Plans",
+      "ledger": "Ledger",
+      "usage": "Usage",
+      "credentials": "Key audit"
+    },
+    "exit": "Back to console",
+    "common": {
+      "loading": "Loading…",
+      "empty": "No data"
+    },
+    "error": {
+      "title": "Request failed",
+      "authTitle": "Authentication failed",
+      "retry": "Retry"
+    },
+    "auth": {
+      "viaRole": "Logto admin role",
+      "viaToken": "Internal token (X-Admin-Token)"
+    },
+    "gate": {
+      "title": "Operations admin sign-in",
+      "noCredentials": "No usable credentials detected: sign in with a Logto identity holding an admin role, or enter the internal token.",
+      "tokenLabel": "Internal token (INTERNAL_API_TOKEN)",
+      "tokenSubmit": "Enter with token",
+      "roleHint": "The current console identity is not an admin; a role from ADMIN_ROLES can be assigned in Logto instead.",
+      "backToConsole": "Back to console",
+      "hint": "The token is stored in this browser's localStorage and is for internal operations only; when the server has no token configured every request is refused (fail-closed)."
+    },
+    "customers": {
+      "title": "Customers",
+      "subtitle": "Provision customers (sub2api creates the payment account) / change plan and status / bind Logto identities.",
+      "sub2apiNote": "Provisioning calls sub2api (idempotent); failures surface honestly and leave no local dirty row.",
+      "createTitle": "New customer",
+      "nameLabel": "Customer name",
+      "planLabel": "Plan",
+      "create": "Provision",
+      "creating": "Provisioning…",
+      "noPlans": "Create a plan first under Plans",
+      "colName": "Customer",
+      "colIdentity": "Payment account",
+      "colPlan": "Plan",
+      "colStatus": "Status",
+      "colActions": "Actions",
+      "detail": "Identities & quota",
+      "detailTitle": "Customer: {{name}}",
+      "quotaLabel": "Quota this period",
+      "quotaAllowed": "Within quota",
+      "identitiesTitle": "Identity bindings",
+      "identitiesHint": "Bind the customer's Logto identity (username/email) to this customer; the console resolves usage and billing through it.",
+      "unbind": "Unbind",
+      "noIdentities": "No identity bound yet.",
+      "identityPlaceholder": "Logto username or email",
+      "bind": "Bind",
+      "meteringIdentities": "Metering identities: {{identities}}",
+      "empty": "No customers yet.",
+      "createdNotice": "Customer created.",
+      "existingNotice": "Customer already existed (idempotent)."
+    },
+    "plans": {
+      "title": "Plans",
+      "subtitle": "Tiers, included quota and overage unit prices; saving takes effect immediately, no release needed.",
+      "noDeployNote": "Saving takes effect immediately (settlement reads current prices)",
+      "editorTitle": "Plan editor",
+      "newDraft": "Clear form",
+      "codeLabel": "Plan code",
+      "nameLabel": "Plan name",
+      "monthlyLabel": "Monthly fee (CNY)",
+      "activeLabel": "Active",
+      "quotasTitle": "Per-unit quotas",
+      "includedLabel": "Included quantity",
+      "overageLabel": "Overage unit price (CNY/unit)",
+      "removeQuota": "Remove",
+      "addQuota": "Add unit",
+      "save": "Save and apply",
+      "saving": "Saving…",
+      "savedNotice": "Saved; the new price applies to subsequent metering immediately.",
+      "colCode": "Code",
+      "colName": "Name",
+      "colMonthly": "Monthly fee",
+      "colQuotas": "Quotas (included / unit price)",
+      "colActions": "Actions",
+      "inactive": "Inactive",
+      "edit": "Edit",
+      "empty": "No plans yet (numbers are never pre-filled; configure on demand)."
+    },
+    "ledger": {
+      "title": "Ledger",
+      "subtitle": "Read-only billing_ledger_entries; amounts are booked in micro-units and displayed in CNY.",
+      "customerLabel": "Customer",
+      "allCustomers": "All customers",
+      "empty": "No ledger entries under the current filter.",
+      "colCustomer": "Customer",
+      "colSettled": "Payment applied",
+      "applied": "Applied",
+      "notApplied": "Not applied",
+      "footnote": "The idempotency key is unique; replaying the same key never double-books (settlement idempotency guard)."
+    },
+    "usage": {
+      "title": "Usage overview",
+      "subtitle": "metering_records aggregated by (track × caller × unit); the platform track is not billed.",
+      "trackLabel": "Track",
+      "allTracks": "All tracks",
+      "totalCalls": "Calls",
+      "byTrack": "By track",
+      "byUnit": "By unit",
+      "colTrack": "Track",
+      "colCaller": "Caller",
+      "empty": "No metering records in this period.",
+      "footnote": "The usage stamp is the sole billing basis; audit events missing a usage stamp land in the anomaly table (never silent)."
+    },
+    "credentials": {
+      "title": "Key audit",
+      "subtitle": "Mint/revoke events performed through the lex console proxy (metadata; neither plaintext nor hash is stored).",
+      "usernameLabel": "Filter by identity",
+      "empty": "No key operations recorded.",
+      "colTime": "Time",
+      "colAction": "Action",
+      "colUser": "Identity",
+      "colKey": "Key",
+      "colGroups": "Groups",
+      "colDetail": "Result"
+    }
+  },
+  "deploy": {
+    "eyebrow": "On-premise delivery",
+    "title": "Lex on-premise delivery",
+    "lede": "A versioned delivery bundle from the same builder runs standalone in the customer's data centre: single-machine container orchestration, digest-pinned component images, three data tiers on demand. Cloud and on-premise share one capability set, with differences limited to what the capability catalog states.",
+    "ctaSections": "See what ships",
+    "channelsTitle": "Delivery channels",
+    "channels": {
+      "single": {
+        "name": "Single bundle install",
+        "desc": "Installed from the shipped media: the citation bundle is the mandatory base, corpus and judgment bundles are optional per project scope."
+      },
+      "incremental": {
+        "name": "Incremental channel",
+        "desc": "Customer-side scheduled tasks pull daily/weekly increments from the distribution endpoint (credential-authenticated); integrity checks gate every apply."
+      },
+      "airgap": {
+        "name": "Offline channel",
+        "desc": "For environments with media only and no internet, the offline full bundle carries the same incremental content as the online channel."
+      }
+    },
+    "scopeTitle": "Scope and acceptance",
+    "scope": {
+      "cloud": "Cloud: lex.finddatatech.cloud serves retrieval, contract intelligence and model API access (model API planned for v1.x).",
+      "private": "On-premise: one-command single-machine compose; statute and case retrieval plus contract generation work in an isolated (no-internet) environment.",
+      "contract": "Acceptance: a smoke checklist ships with the bundle plus versioned rollback; upgrades are reinstall-style and preserve customer data volumes."
+    },
+    "contactCta": "Contact us for a delivery plan"
+  }
+}
