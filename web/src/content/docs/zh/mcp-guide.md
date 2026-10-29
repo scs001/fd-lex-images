@@ -1,11 +1,11 @@
 ---
 title: MCP 接入手册
-description: 通过 MCP Streamable HTTP 接入识律法律检索服务：凭据获取、连接配置、工具清单、数据溯源契约、计量额度与故障排查。
+description: 通过 MCP Streamable HTTP 接入良律法律检索服务：凭据获取、连接配置、工具清单、数据溯源契约、计量额度与故障排查。
 ---
 
 ## 一、适用对象与前置条件
 
-本手册面向需要在自有应用、Agent 工作流或 MCP 客户端中接入识律法律检索服务的开发者与法务技术人员。
+本手册面向需要在自有应用、Agent 工作流或 MCP 客户端中接入良律法律检索服务的开发者与法务技术人员。
 
 开始之前，请确认：
 
@@ -17,7 +17,7 @@ description: 通过 MCP Streamable HTTP 接入识律法律检索服务：凭据�
 
 ## 二、获取凭据
 
-识律平台采用客户自持长命 API key 的凭据模型，key 以 `wgk-` 为前缀。铸造与保管步骤如下：
+良律平台采用客户自持长命 API key 的凭据模型，key 以 `wgk-` 为前缀。铸造与保管步骤如下：
 
 1. 浏览器打开控制台：`https://lex.finddatatech.cloud/console`。
 2. 首次使用先注册账号（注册与登录由 Logto 身份服务承载）；已注册则直接登录。
@@ -264,7 +264,7 @@ curl -sS -X POST https://lex.finddatatech.cloud/mcp \
 | 现象 | 含义 | 处理 |
 |---|---|---|
 | HTTP 401 | 入口未收到有效凭据（未带头、key 失效或已被替换） | 核对认证头与 key；无凭据探测到 401 也说明入口在役 <!-- audit-exempt: HTTP 状态码 --> |
-| HTTP 403 | key 有效但越界：访问了未授权的服务面 | 确认所用 key 的授权范围仅覆盖识律法律检索服务，勿将其用于其他平台入口 <!-- audit-exempt: HTTP 状态码 --> |
+| HTTP 403 | key 有效但越界：访问了未授权的服务面 | 确认所用 key 的授权范围仅覆盖良律法律检索服务，勿将其用于其他平台入口 <!-- audit-exempt: HTTP 状态码 --> |
 | HTTP 402 | 额度预检未通过：余额为零或额度耗尽（fail-closed） | 到控制台额度状态页确认余额并完成充值/入金，到账后重试 <!-- audit-exempt: HTTP 状态码 --> |
 | HTTP 502 | 网关瞬态异常（如网关侧发布或重建窗口） | 稍候重试；持续出现请联系支持 <!-- audit-exempt: HTTP 状态码 --> |
 
@@ -290,4 +290,4 @@ curl -sS -X POST https://lex.finddatatech.cloud/mcp \
 
 ### 支持私有化部署吗？
 
-支持。私有化部署是识律平台的线级能力，部署形态与交付包详见官网 `/deploy` 页。
+支持。私有化部署是良律平台的线级能力，部署形态与交付包详见官网 `/deploy` 页。

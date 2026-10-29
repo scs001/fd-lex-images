@@ -1,5 +1,5 @@
 {
-  "brand": "识律 Lex",
+  "brand": "良律 LiangLü",
   "nav": {
     "label": "Site navigation",
     "capabilities": "Capabilities",
@@ -11,7 +11,7 @@
   "hero": {
     "titleLine1": "Legal data · apps · models",
     "titleLine2": "Vertically integrated, privately deployable end to end",
-    "lede": "Lex is the legal-technology product line of FindData: statute and case data, contract-intelligence apps, in-house legal models and the execution base, delivered as one versioned distribution package — one capability set across two hosts, our cloud or your machine room.",
+    "lede": "LiangLü (良律) is the technology platform of the FindData Lex family (寻数·识律): statute and case data, contract-intelligence apps, in-house legal models and the execution base, delivered as one versioned distribution package — one capability set across two hosts, our cloud or your machine room. Law is not only for practitioners — LiangLü helps everyone understand why the law is as it is, how it used to be, whether it is reasonable, and what harms it carries.",
     "stats": {
       "wenshu": {
         "value": "37M",
@@ -55,7 +55,7 @@
   },
   "capabilities": {
     "title": "Capability catalog",
-    "lede": "Lex capabilities are produced by a single builder and delivered in one versioned distribution package, hosted in our cloud or in your machine room. Every entry's availability per host is stated honestly; no unstated host differences exist beyond this catalog.",
+    "lede": "LiangLü capabilities are produced by a single builder and delivered in one versioned distribution package, hosted in our cloud or in your machine room. Every entry's availability per host is stated honestly; no unstated host differences exist beyond this catalog.",
     "columnCapability": "Capability",
     "columnPoints": "Highlights",
     "columnHost": "Hosting",
@@ -142,7 +142,7 @@
   },
   "pricing": {
     "title": "Pricing",
-    "lede": "Lex is billed by plan. Plan numbers are configured in the admin backend, never pre-filled or publicly listed; they are fixed when the contract is signed.",
+    "lede": "LiangLü is billed by plan. Plan numbers are configured in the admin backend, never pre-filled or publicly listed; they are fixed when the contract is signed.",
     "subtitle": "Billing dimensions",
     "dimensions": {
       "units": {
@@ -172,7 +172,7 @@
   },
   "docs": {
     "title": "Private deployment",
-    "lede": "The full Lex stack is privately deployable: one versioned distribution package, produced by a single builder, running independently in your machine room.",
+    "lede": "The full LiangLü stack is privately deployable: one versioned distribution package, produced by a single builder, running independently in your machine room.",
     "sections": {
       "deploy": {
         "name": "Deployment",
@@ -203,7 +203,7 @@
   },
   "docHub": {
     "eyebrow": "Docs",
-    "indexTitle": "Lex documentation",
+    "indexTitle": "LiangLü documentation",
     "indexLede": "Integration guides and manuals, served in the current language; the Chinese and English versions are maintained in parity.",
     "read": "Read more →",
     "backToIndex": "Back to docs index",
@@ -235,14 +235,14 @@
     "contactLabel": "Contact",
     "contactPending": "Business contact channel being set up",
     "icp": "ICP filing information to be added",
-    "copyright": "© 2026 FindData · Lex"
+    "copyright": "© 2026 FindData · LiangLü"
   },
   "lang": {
     "switch": "中文",
     "ariaLabel": "Switch to Chinese"
   },
   "console": {
-    "title": "Lex Console",
+    "title": "LiangLü Console",
     "nav": {
       "overview": "Overview",
       "credentials": "API keys",
@@ -271,7 +271,7 @@
       "blockedTitle": "Console sign-in not configured",
       "blockedBody": "Logto sign-in is not configured on the server (missing environment variables); the console stays disabled rather than faking a login. Missing:",
       "blockedConfigHint": "A Logto SPA application must be created and LOGTO_ISSUER / LOGTO_CLIENT_ID filled in (see the deployment runbook).",
-      "loginTitle": "Sign in to the Lex console",
+      "loginTitle": "Sign in to the LiangLü console",
       "loginBody": "Sign in or register with your enterprise account. External customers belong to the lex-customers organization, isolated from internal identities.",
       "loginButton": "Sign in / Register",
       "loginUnavailable": "Sign-in service is unavailable right now; please retry later.",
@@ -511,7 +511,7 @@
   },
   "deploy": {
     "eyebrow": "On-premise delivery",
-    "title": "Lex on-premise delivery",
+    "title": "LiangLü on-premise delivery",
     "lede": "A versioned delivery bundle from the same builder runs standalone in the customer's data centre: single-machine container orchestration, digest-pinned component images, three data tiers on demand. Cloud and on-premise share one capability set, with differences limited to what the capability catalog states.",
     "ctaSections": "See what ships",
     "channelsTitle": "Delivery channels",

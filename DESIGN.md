@@ -1,6 +1,6 @@
 ---
-name: 识律 Lex (fd-lex web)
-description: 法律 B2B 官网与能力目录——法典蓝档案世界，宋体显示、台账行式、宿主标注如实
+name: 良律 LiangLü (fd-lex web)
+description: 法律科技平台官网与能力目录（识律家族成员）——法典蓝档案世界，宋体显示、台账行式、宿主标注如实
 colors:
   statute-navy: "#12305b"
   navy-deep: "#0c2140"

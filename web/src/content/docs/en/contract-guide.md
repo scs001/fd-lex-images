@@ -10,7 +10,7 @@ description: The LawBench contract intelligence user guide for legal professiona
 
 A guide for legal professionals: those who draft and review contracts day to day, in corporate legal departments and law firms.
 
-Contract intelligence on the Lex platform (LawBench) rests on one core idea: **a contract is not invented by a model — it is assembled from a clause library.** Drafting is not left to one-shot free generation. The platform selects clauses from a library rooted in the Civil Code and the practical contract taxonomy, and assembles them into a draft according to the type, stance and scenario you choose. Every draft therefore has traceable grounding — where its clauses come from and which statutes they correspond to.
+Contract intelligence on the LiangLü platform (LawBench) rests on one core idea: **a contract is not invented by a model — it is assembled from a clause library.** Drafting is not left to one-shot free generation. The platform selects clauses from a library rooted in the Civil Code and the practical contract taxonomy, and assembles them into a draft according to the type, stance and scenario you choose. Every draft therefore has traceable grounding — where its clauses come from and which statutes they correspond to.
 
 Around this idea the platform offers six capabilities, each covered in this guide:
 
@@ -25,7 +25,7 @@ Around this idea the platform offers six capabilities, each covered in this guid
 
 One prerequisite:
 
-- **Access to the Lex platform** — accounts and credentials are provided once the platform is provisioned for you; if it is not yet, please contact us first.
+- **Access to the LiangLü platform** — accounts and credentials are provided once the platform is provisioned for you; if it is not yet, please contact us first.
 
 With access in place, two assets back the drafting work:
 

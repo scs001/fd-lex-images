@@ -1,11 +1,11 @@
 ---
 title: MCP Integration Guide
-description: Connect to the Lex legal-search MCP over Streamable HTTP — credentials, connection settings, tool reference, provenance contract, metering, and troubleshooting.
+description: Connect to the LiangLü legal-search MCP over Streamable HTTP — credentials, connection settings, tool reference, provenance contract, metering, and troubleshooting.
 ---
 
 ## 1. Audience and prerequisites
 
-This guide is for developers and legal-engineering practitioners who want to integrate the Lex legal-search service into their own applications, agent workflows, or MCP clients.
+This guide is for developers and legal-engineering practitioners who want to integrate the LiangLü legal-search service into their own applications, agent workflows, or MCP clients.
 
 Before you start, make sure that:
 
@@ -17,7 +17,7 @@ The endpoint currently exposes 10 legal-search tools [N7] covering four data dom
 
 ## 2. Obtaining credentials
 
-The Lex platform uses customer-held long-lived API keys, prefixed with `wgk-`. To mint and store one:
+The LiangLü platform uses customer-held long-lived API keys, prefixed with `wgk-`. To mint and store one:
 
 1. Open the console in a browser: `https://lex.finddatatech.cloud/console`.
 2. Register an account on first use (registration and login are handled by the Logto identity service); existing users can sign in directly.
@@ -264,7 +264,7 @@ Two basic checks first: confirm the request carries an `Authorization: Bearer` h
 | Symptom | Meaning | Action |
 |---|---|---|
 | HTTP 401 | The endpoint received no valid credential (missing header, expired key, or replaced key) | Verify the auth header and key; a 401 on an unauthenticated probe also confirms the endpoint is alive <!-- audit-exempt: HTTP status code --> |
-| HTTP 403 | The key is valid but out of scope: an unauthorized service surface was addressed | Confirm the key's authorization covers only the Lex legal-search service; do not point it at other platform endpoints <!-- audit-exempt: HTTP status code --> |
+| HTTP 403 | The key is valid but out of scope: an unauthorized service surface was addressed | Confirm the key's authorization covers only the LiangLü legal-search service; do not point it at other platform endpoints <!-- audit-exempt: HTTP status code --> |
 | HTTP 402 | Quota precheck failed: zero balance or exhausted quota (fail-closed) | Check the balance on the console quota page, complete a top-up, then retry once credited <!-- audit-exempt: HTTP status code --> |
 | HTTP 502 | Transient gateway error (e.g. a gateway release or rebuild window) | Retry shortly; contact support if it persists <!-- audit-exempt: HTTP status code --> |
 
@@ -290,4 +290,4 @@ Mint a new key immediately and update your client configuration; then check the 
 
 ### Is private deployment supported?
 
-Yes. Private deployment is a platform-line capability of Lex; see the `/deploy` page on the website for deployment forms and the distribution package.
+Yes. Private deployment is a platform-line capability of LiangLü; see the `/deploy` page on the website for deployment forms and the distribution package.

@@ -59,7 +59,7 @@ describe('Docs pages', () => {
     await i18n.changeLanguage('en')
     renderRoutes('/docs')
 
-    expect(screen.getByText('Lex documentation')).toBeTruthy()
+    expect(screen.getByText('LiangLü documentation')).toBeTruthy()
     const mcp = getDoc('en', 'mcp-guide')
     expect(mcp).toBeTruthy()
     expect(screen.getByRole('heading', { name: mcp!.title })).toBeTruthy()

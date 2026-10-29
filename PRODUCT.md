@@ -1,4 +1,4 @@
-# PRODUCT.md — 识律 Lex (fd-lex)
+# PRODUCT.md — 良律 LiangLü (fd-lex)
 
 > Inferred from the lex-platform-v1 proposal and specs (openspec/changes/lex-platform-v1) by the
 > frontend apply agent, because no interview was held. Every claim below traces to a spec; nothing
@@ -6,10 +6,13 @@
 
 ## What this is
 
-识律（Lex）is FindData's (寻数) legal-technology product line: the vertical platform that turns
-four layers of real assets — legal data (statute library, judgments, guiding cases, corpora),
-applications (LawBench contract intelligence), in-house models (judge_c / drafter_a), and the
-壹座 execution base — into one commercially available platform.
+良律（LiangLü）is FindData's (寻数) legal-technology platform, a member of the 识律 (Lex) family:
+the vertical platform that turns four layers of real assets — legal data (statute library,
+judgments, guiding cases, corpora), applications (LawBench contract intelligence), in-house
+models (judge_c / drafter_a), and the 壹座 execution base — into one commercially available
+platform. Law is not only for practitioners: LiangLü also aims to help everyone understand why
+the law is as it is, how it used to be, whether it is reasonable, and what harms it carries
+(lex-family-rebrand, 2026-10-30).
 
 Line-level invariant: **every customer-visible lex component ships inside the versioned
 distribution package and can run in the customer's machine room.** Cloud and on-premises are two

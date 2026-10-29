@@ -1,5 +1,5 @@
 {
-  "brand": "识律 Lex",
+  "brand": "良律 LiangLü",
   "nav": {
     "label": "站内导航",
     "capabilities": "能力目录",
@@ -11,7 +11,7 @@
   "hero": {
     "titleLine1": "法律数据 · 应用 · 模型",
     "titleLine2": "垂直整合，全栈可私有化",
-    "lede": "识律（Lex）是寻数旗下的法律科技产品线：法规与案例数据、合同智能应用、自研法律模型与执行底座，整合为同一份版本化交付包——云端与客户机房，同一能力。",
+    "lede": "良律（LiangLü）是寻数·识律家族的科技平台：法规与案例数据、合同智能应用、自研法律模型与执行底座，整合为同一份版本化交付包——云端与客户机房，同一能力。法律不只属于从业者——良律也想帮每个人读懂法律为何如此、以前如何、是否合理、有何弊端。",
     "stats": {
       "wenshu": {
         "value": "3,700 万",
@@ -55,7 +55,7 @@
   },
   "capabilities": {
     "title": "能力目录",
-    "lede": "识律的能力由同一构建器产出、随同一份版本化交付包交付，云端与私有化双宿主。每项能力的宿主可用性如实标注，此外不存在未标注的宿主差异。",
+    "lede": "良律的能力由同一构建器产出、随同一份版本化交付包交付，云端与私有化双宿主。每项能力的宿主可用性如实标注，此外不存在未标注的宿主差异。",
     "columnCapability": "能力",
     "columnPoints": "要点",
     "columnHost": "宿主",
@@ -142,7 +142,7 @@
   },
   "pricing": {
     "title": "定价",
-    "lede": "识律按套餐计费。套餐数字由后台配置、不预填、不公开标价，于签约时确定。",
+    "lede": "良律按套餐计费。套餐数字由后台配置、不预填、不公开标价，于签约时确定。",
     "subtitle": "计费维度",
     "dimensions": {
       "units": {
@@ -172,7 +172,7 @@
   },
   "docs": {
     "title": "私有化交付",
-    "lede": "识律全栈可私有化：同一构建器产出的版本化交付包，在客户机房独立运行。",
+    "lede": "良律全栈可私有化：同一构建器产出的版本化交付包，在客户机房独立运行。",
     "sections": {
       "deploy": {
         "name": "部署形态",
@@ -203,7 +203,7 @@
   },
   "docHub": {
     "eyebrow": "文档",
-    "indexTitle": "识律文档",
+    "indexTitle": "良律文档",
     "indexLede": "接入指南与使用手册；文档按当前语言提供，中文与英文版本对等维护。",
     "read": "阅读全文 →",
     "backToIndex": "返回文档索引",
@@ -235,14 +235,14 @@
     "contactLabel": "联系",
     "contactPending": "商务联系渠道配置中",
     "icp": "ICP 备案信息待补充",
-    "copyright": "© 2026 寻数（FindData）· 识律 Lex"
+    "copyright": "© 2026 寻数（FindData）· 良律 LiangLü"
   },
   "lang": {
     "switch": "English",
     "ariaLabel": "切换到英文"
   },
   "console": {
-    "title": "识律控制台",
+    "title": "良律控制台",
     "nav": {
       "overview": "总览",
       "credentials": "API 凭据",
@@ -271,7 +271,7 @@
       "blockedTitle": "控制台登录未配置",
       "blockedBody": "服务端尚未配置 Logto 登录（环境变量缺失），控制台如实停用而不是假登录。缺失项：",
       "blockedConfigHint": "需要主代理在 Logto 侧新建 SPA 应用并回填 LOGTO_ISSUER / LOGTO_CLIENT_ID（详见部署 runbook）。",
-      "loginTitle": "登录识律控制台",
+      "loginTitle": "登录良律控制台",
       "loginBody": "使用企业账号登录或注册；外部客户归属 lex-customers 组织，与内部身份隔离。",
       "loginButton": "登录 / 注册",
       "loginUnavailable": "登录服务暂不可用，请稍后重试。",
@@ -511,7 +511,7 @@
   },
   "deploy": {
     "eyebrow": "私有化交付",
-    "title": "识律私有化交付",
+    "title": "良律私有化交付",
     "lede": "同一构建器产出的版本化交付包在客户机房独立运行：单机容器编排一键安装、组件镜像 digest 锁定、数据三档按需交付；云端与客户机房能力一致，差异仅限能力目录标注项。",
     "ctaSections": "查看交付构成",
     "channelsTitle": "交付通道",
